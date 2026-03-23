@@ -12,7 +12,7 @@ const About = () => {
 
                     <div style={styles.textContainer}>
                         <p style={styles.text}>
-                            I started my journey by editing videos in my free time. After joining Christ University, India, my passion turned into a profession. I got the opportunity to work closely with the Faculty of Computer Science and the Office of Alumni Engagement as a student core member of media and marketing.
+                            I started my journey by filming and editing videos in my free time. As a passionate videographer and editor, my hobby quickly turned into a profession. After joining Christ University, India, I got the opportunity to work closely with the Faculty of Computer Science and the Office of Alumni Engagement as a student core member of media and marketing.
                         </p>
                         <p style={styles.text}>
                             I'm also actively working with OG Media and Marketing India and have collaborated with various brands. Eventually, my journey took me to Germany as an exchange student, where I started vlogging my experiences.

@@ -21,7 +21,7 @@ const Hero = () => {
 
                 <div style={styles.subtitleWrapper} className="animate-fade-up stagger-3">
                     <h2 style={styles.subtitle} className="typewriter">
-                        Freelance Video Editor & Media Specialist
+                        Videographer, Video Editor & Media Specialist
                     </h2>
                     <p style={styles.techText}>+ Computer Science Enthusiast</p>
                 </div>
