@@ -7,14 +7,26 @@ const Portfolio = () => {
             <div className="container">
                 <h2 className="section-title animate-fade-up">02. <span>Selected Works</span></h2>
 
-                <div style={styles.vlogSection} className="animate-fade-up">
-                    <h3 style={styles.subTitle}>My Vlogging Journey</h3>
-                    <p style={styles.vlogText}>
-                        Check out my experiences as an exchange student in Germany on my dedicated vlogging account: <br />
-                        <a href={profileBase} target="_blank" rel="noopener noreferrer" style={styles.vlogLink}>
-                            @decodedbynish
-                        </a>
-                    </p>
+                <div style={styles.highlightGrid} className="animate-fade-up">
+                    <div style={styles.vlogSection}>
+                        <h3 style={styles.subTitle}>My Vlogging Journey</h3>
+                        <p style={styles.vlogText}>
+                            Check out my experiences as an exchange student in Germany on my dedicated vlogging account: <br />
+                            <a href={profileBase} target="_blank" rel="noopener noreferrer" style={styles.vlogLink}>
+                                @decodedbynish
+                            </a>
+                        </p>
+                    </div>
+
+                    <div style={{ ...styles.vlogSection, borderLeft: '4px solid #e10600' }}>
+                        <h3 style={styles.subTitle}>Where It All Started</h3>
+                        <p style={styles.vlogText}>
+                            I edit content for the F1 Community in my free time, and it's where my media journey began. Check out the page here: <br />
+                            <a href="https://www.instagram.com/f1__community" target="_blank" rel="noopener noreferrer" style={styles.vlogLink}>
+                                @f1__community
+                            </a>
+                        </p>
+                    </div>
                 </div>
 
                 <div className="portfolio-grid">
@@ -74,13 +86,19 @@ const styles = {
     section: {
         backgroundColor: 'var(--bg-color)',
     },
-    vlogSection: {
+    highlightGrid: {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+        gap: '2rem',
         marginBottom: '3rem',
+    },
+    vlogSection: {
         padding: '2rem',
         backgroundColor: 'var(--card-bg)',
         borderRadius: '12px',
         boxShadow: 'var(--card-shadow)',
         borderLeft: '4px solid var(--accent-color)',
+        height: '100%',
     },
     subTitle: {
         fontSize: '1.5rem',
