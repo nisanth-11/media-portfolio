@@ -230,6 +230,19 @@ a {
   align-items: center;
 }
 
+.profile-image {
+  float: right;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 3/4;
+  background-color: var(--bg-color);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
 .btn-group {
   display: flex;
   gap: 1.2rem;
@@ -253,6 +266,12 @@ a {
 @media (max-width: 768px) {
   html {
     font-size: 14px;
+  }
+
+  .profile-image {
+    float: none !important;
+    margin: 0 auto 2rem auto !important;
+    display: block !important;
   }
 
   .about-content {

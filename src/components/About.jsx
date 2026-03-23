@@ -5,7 +5,11 @@ const About = () => {
         <section id="about" className="section" style={styles.section}>
             <div className="container">
                 <h2 className="section-title animate-fade-up">01. <span>About Me</span></h2>
-                <div className="about-content animate-fade-up">
+                <div className="animate-fade-up">
+                    <div className="profile-image">
+                        <img src="/headshot.jpg" alt="Nisanth Vadivelan Sangeetha" style={styles.img} />
+                    </div>
+
                     <div style={styles.textContainer}>
                         <p style={styles.text}>
                             I started my journey by editing videos in my free time. After joining Christ University, India, my passion turned into a profession. I got the opportunity to work closely with the Faculty of Computer Science and the Office of Alumni Engagement as a student core member of media and marketing.
@@ -17,12 +21,7 @@ const About = () => {
                             With a background in Computer Science, I don't just edit videos—I have the analytical mindset to understand algorithms and the technical ability to develop solid websites and mobile applications. Whether I'm cutting footage in DaVinci Resolve or writing code, I love creating engaging digital experiences.
                         </p>
                     </div>
-                    <div style={styles.imageContainer}>
-                        <div style={styles.imagePlaceholder}>
-                            {/* Once you save your image into public folder as headshot.jpg, it will show up here */}
-                            <img src="/headshot.jpg" alt="Nisanth Vadivelan Sangeetha" style={styles.img} />
-                        </div>
-                    </div>
+                    <div style={{ clear: 'both' }}></div>
                 </div>
             </div>
         </section>
@@ -44,19 +43,6 @@ const styles = {
         fontSize: '1.1rem',
         color: 'var(--text-secondary)',
         marginBottom: '1.5rem',
-    },
-    imageContainer: {
-        display: 'flex',
-        justifyContent: 'center',
-    },
-    imagePlaceholder: {
-        width: '100%',
-        maxWidth: '220px',
-        aspectRatio: '3/4',
-        backgroundColor: 'var(--bg-color)',
-        borderRadius: '16px',
-        overflow: 'hidden',
-        boxShadow: 'var(--card-shadow)',
     },
     img: {
         width: '100%',
